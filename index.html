@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <div><nav id="navbar">
+        <header><h1>HTML</h1></header>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#Basic_Structure" class="nav-link"> Basic Structure</a></li>
+            <li><a href="#Elements" class="nav-link">Elements</a></li>
+            <li><a href="#Paragraphs" class="nav-link">Paragraphs</a></li>
+            <li><a href="#Headings" class="nav-link">Headings</a></li>
+            <li><a href="#Links" class="nav-link"> Links</a></li>
+            <li><a href="#Images" class="nav-link">Images</a></li>
+            <li><a href="#Attributes" class="nav-link">Attributes</a></li>
+            <li><a href="#Forms" class="nav-link">Forms</a></li>
+            <li><a href="#Semantic_HTML" class="nav-link">Semantic HTML</a></li>
+            <li><a href="#Best_Practices" class="nav-link">Best Practices</a></li>
+            <li><a href="#Resources" class="nav-link">Resources</a></li>
+    </nav></div>
+    <br>
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages. It describes the structure of a webpage using a series of elements and tags.</p>
+        </section>
+
+        <section class="main-section" id="Basic_Structure">
+            <header>Basic Structure</header>
+            <p>Every HTML document has a basic structure that includes the following components:</p>
+            <div class="code"><pre><code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;title&gt;Page Title&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body>
+                &lt;h1&gt;This is a Heading&lt;/h1&gt;
+                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code></pre></div>
+            <ul>
+                <li><pre><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type and version of HTML.</pre></li>
+                <li><pre><code>&lt;html>: The root element of an HTML page.</code></pre></li>
+                <li><pre><code>&lt;head&gt;: Contains meta-information about the HTML document.</code></pre></li>
+                <li><pre><code>&lt;title&gt;: Specifies the title of the HTML document.</code></li>
+                <li><pre><code>&lt;body&gt;: Contains the content of the HTML document.</code></li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Elements">
+            <header>Elements</header>
+
+            <section class="sub-section" id="Headings">
+                <header>Headings</header>
+                <p>Headings are used to define the titles and subtitles in a webpage. There are six levels of headings, from &lt;h1&gt; (highest) to &lt;h6&gt; (lowest).</p>
+                    <div class="code"><pre><code>
+                        &lt;h1&gt;This is an H1 Heading&lt;/h1&gt;
+                        &lt;h2&gt;This is an H2 Heading&lt;/h2&gt;
+                        &lt;h3&gt;This is an H3 Heading&lt;/h3&gt;
+                        &lt;h4&gt;This is an H4 Heading&lt;/h4&gt;
+                        &lt;h5&gt;This is an H5 Heading&lt;/h5&gt;
+                        &lt;h6&gt;This is an H6 Heading&lt;/h6&gt;
+                    </code></pre></div>
+            </section>
+<br>
+            <section class="sub-section" id="Paragraphs">
+                <header>Paragraphs</header>
+                <p>Paragraphs are used to define blocks of text.</p>
+                <div class="code"><pre><code>
+                    &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+                </code></pre></div>   
+            </section>
+
+            <section class="sub-section" id="Links">
+                <header>Links</header>
+                <p>Links are used to create hyperlinks to other webpages or resources.</p>
+                <div class="code"><pre><code>
+                    &lt;a href="https://www.example.com"&gt;This is a link&lt;/a&gt;
+                </code></pre></div>
+            </section>
+
+            <section class="sub-section" id="Images">
+                <header>Images</header>
+                <p>Images are embedded using the &lt;img> tag, which requires the src attribute to specify the image source.</p>
+                <div class="code"><pre><code>
+                    &lt;img src="image.jpg" alt="Description of image"&gt;
+                </code></pre></div>
+            </section>
+        </section>
+<br>
+        <section class="main-section" id="Attributes">
+            <header>Attributes</header>
+            <p>Attributes provide additional information about HTML elements. They are always included in the opening tag of an element and usually come in name/value pairs.</p>
+            <div class="code"><pre><code>
+                &lt;a href="https://www.example.com" target="_blank">Visit Example.com&lt;/a&gt;
+            </code></pre></div>
+            <ul>
+                <li>href: Specifies the URL of the page the link goes to.</li>
+                <li>target: Specifies where to open the linked document.</li>
+        </section>
+<br>
+        <section class="main-section" id="Forms">
+            <header>Forms</header>
+            <p>Forms are used to collect user input and send it to a server.</p>
+            <div class="code"><pre><code>
+                &lt;form action="/submit-form" method="post"&gt;
+                &lt;label for="name">Name:&lt;/label&gt;
+                &lt;input type="text" id="name" name="name"&gt;<br>
+                &lt;label for="email">Email:&lt;/label&gt;
+                &lt;input type="email" id="email" name="email"&gt; <br>
+                &lt;input type="submit" value="Submit"&gt;
+                &lt;/form&gt;
+            </code></pre></div>
+        </section>
+<br>
+        <section class="main-section" id="Semantic_HTML">
+            <header>Semantic HTML</header>
+            <p>Semantic HTML introduces meaning to the web page rather than just presentation. It helps in improving the accessibility and SEO of the web page.</p>
+            <b>Examples:</b>
+            <ul>
+                <li>&lt;header>: Represents a container for introductory content or a set of navigational links.</li>
+                <li>&lt;nav&gt;: Defines a set of navigation links.</li>
+                <li>&lt;main&gt;: Specifies the main content of a document.</li>
+                <li>&lt;footer&gt;: Defines a footer for a document or section.</li>
+                <li>&lt;article&gt;: Represents a self-contained piece of content.</li>
+                <li>&lt;section&gt;: Defines a section in a document.</li>
+            </ul>
+        </section>
+<br>
+        <section class="main-section" id="Best_Practices">
+            <header>Best Practices
+            </header>
+            <ul>
+                <li>Always use semantic elements for better readability and accessibility.</li>
+                <li>Ensure all images have alt attributes for accessibility.</li>
+                <li>Use external CSS and JavaScript files to keep HTML code clean.</li>
+                <li>Validate HTML using W3C validation tools to ensure it adheres to standards.</li>
+                <li>Maintain a consistent and clear structure.</li>
+            </ul>
+        </section>
+<br>
+        <section class="main-section" id="Resources">
+            <header>Resources</header>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">&#128279 Mozilla Developer Network (MDN) HTML Documentation</a></li>
+                <li><a href="https://www.w3schools.com/html/"> &#128279 W3Schools HTML Tutorial</a></li>
+                <li><a href="https://html.spec.whatwg.org/multipage/"> &#128279HTML Living Standard</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
